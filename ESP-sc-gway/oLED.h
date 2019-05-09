@@ -55,14 +55,14 @@
 #if OLED==1
 #include "SSD1306.h"
 #define OLED_ADDR 0x3C							// Default 0x3C for 0.9", for 1.3" it is 0x78
-SSD1306  display(OLED_ADDR, OLED_SDA, OLED_SCL);// i2c ADDR & SDA, SCL on wemos
+SSD1306 display(OLED_ADDR, OLED_SDA, OLED_SCL);// i2c ADDR & SDA, SCL on wemos
 #endif
 
 // This is an 1.3" OLED display which is running on I2C
 #if OLED==2
 #include "SH1106.h"
 #define OLED_ADDR 0x3C							// Default 0x3C for 1.3" SH1106
-SH1106  display(OLED_ADDR, OLED_SDA, OLED_SCL);	// i2c ADDR & SDA, SCL on wemos
+SH1106 display(OLED_ADDR, OLED_SDA, OLED_SCL);	// i2c ADDR & SDA, SCL on wemos
 #endif
 
 #endif//OLED>=1
